@@ -14,8 +14,6 @@ compatibility:
   - webpack 5
   - react 17
 
-technologies: []
-
 about: about.md
 
 useCases:
