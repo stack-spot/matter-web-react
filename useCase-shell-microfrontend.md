@@ -59,11 +59,10 @@ Com uma aplicação shell criada, é possível criar e conectar outras aplicaç�
 
 - Na pasta do projeto shell acesse o arquivo `app/src/App.tsx`
 - Remova a linha 38 do arquivo e descomente as linhas 26 - 36
-- Atualize as propriedades `path` e `scope` para a rota que deseja que esse microfrontend apareça e o `project_name` que foi utilizado para criar o microfrontend com o template **web-react-app-template**
+- Atualize as propriedades `path` e `scope` onde `path` é a rota que irá renderizar microfrontend e o `scope` é o nome do microfrontend que deseja carregar ao navegar para essa rota. O nome da aplicação é o inputproject_name que foi preenchido para criar o microfrontend com o template **web-react-app-template**
 - Atualize a url para apontar para o endereço e porta que o seu microfrontend está sendo exposto
-- Adicione algum link ao projeto **shell** para navegar para a rota que cadastrou em path anteriormente
 - Execute ambos os projetos(shell e microfrontend)
-- Acesse o projeto shell no browser e clique no link que navega para a rota path para ver a conexão de ambos os projetos em um ambiente microfrontend
+- Acesse o projeto shell no browser e clique no link que navega para a rota(cadastrada em path) para ver a conexão de ambos os projetos em um ambiente microfrontend. O template shell base adiciona um link no menu lateral para cada microfrontend cadastrado no array de RemoteModule
 
 O objeto **RemoteModule** que é utilizado para conectar e configurar o microfrontend no shell possui as seguintes propriedades:
 
