@@ -20,6 +20,6 @@ useCases:
   - title: Criar aplicação React
     content: useCase.md
     stackfile: stackfiles/default.yaml
-  - title: Criar aplicação shell para desenvolvimento microfrontend
+  - title: Criar aplicação React Shell
     content: useCase-shell-microfrontend.md
     stackfile: stackfiles/shell-microfrontend.yaml
