@@ -23,3 +23,6 @@ useCases:
   - title: Criar aplicação React Shell
     content: useCase-shell-microfrontend.md
     stackfile: stackfiles/shell-microfrontend.yaml
+  - title: APP React com deploy AWS
+    content: useCase-deploy.md
+    stackfile: stackfiles/deploy.yaml
