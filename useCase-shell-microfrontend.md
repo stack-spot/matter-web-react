@@ -66,7 +66,7 @@ Com uma aplicação shell criada, é possível criar e conectar outras aplicaç�
 
 O objeto **RemoteModule** que é utilizado para conectar e configurar o microfrontend no shell possui as seguintes propriedades:
 
-```
+```bash
 remote = {
       id: Identificador unico para o módulo remoto
       name: nome a sua escolha do modulo remoto na sua aplicação shell
