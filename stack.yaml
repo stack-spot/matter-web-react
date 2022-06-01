@@ -1,6 +1,6 @@
 description: Inicialize aplicações web react preparadas para ambientes microfrontend com webpack module federation.
 
-name: zup-web-react
+name: matter-web-react
 
 displayName: Stack Web React
 

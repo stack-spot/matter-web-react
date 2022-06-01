@@ -1,6 +1,6 @@
 type: app
 displayName: Template React com deploy AWS
 description: Template para uma aplicação React com CDK para deploy em ambiente AWS
-template: zup-web-react/web-react-app-template
+template: matter-web-react/web-react-app-template
 plugins:
-  - plugin: zup-web-react/deploy-aws
+  - plugin: matter-web-react/deploy-aws

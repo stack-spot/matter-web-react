@@ -1,4 +1,4 @@
 type: app
 displayName: Template Básico shell
 description: Template para desenvolver uma aplicação React que é preparada para conectar a um shell microfrontend.
-template: zup-web-react/web-react-appshell-template
+template: matter-web-react/web-react-appshell-template

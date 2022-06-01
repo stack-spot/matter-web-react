@@ -1,4 +1,4 @@
-Caso seja desejado criar uma aplicação React juntamente da infra necessária para se fazer o deploy da mesma, a stack **zup-web-react** fornece o plugin **deploy-aws**. Este plugin cria uma pasta infra no projeto com uma aplicação CDK que, ao ser executada, cria os recursos necessários na AWS para fazer o deploy de uma aplicação React. O plugin também cria uma pasta .github com arquivos github actions para fazer o build e o deploy da aplicação na AWS.
+Caso seja desejado criar uma aplicação React juntamente da infra necessária para se fazer o deploy da mesma, a stack **matter-web-react** fornece o plugin **deploy-aws**. Este plugin cria uma pasta infra no projeto com uma aplicação CDK que, ao ser executada, cria os recursos necessários na AWS para fazer o deploy de uma aplicação React. O plugin também cria uma pasta .github com arquivos github actions para fazer o build e o deploy da aplicação na AWS.
 
 ### Pré-requisitos
 
