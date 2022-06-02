@@ -1,0 +1,12 @@
+[submodule "web-react-app-template"]
+	path = web-react-app-template
+	url = https://github.com/stack-spot/web-react-app-template.git
+[submodule "web-react-appshell-template"]
+	path = web-react-appshell-template
+	url = https://github.com/stack-spot/web-react-appshell-template.git
+[submodule "web-react-beagle-plugin"]
+	path = web-react-beagle-plugin
+	url = https://github.com/stack-spot/web-react-beagle-plugin
+[submodule "web-react-deploy"]
+	path = web-react-deploy
+	url = https://github.com/stack-spot/web-react-deploy
