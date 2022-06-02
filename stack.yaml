@@ -8,8 +8,6 @@ picture: "react.png"
 
 category: Frontend
 
-# source: https://gitcorp.prod.aws.cloud.ihf/FW4/stack-spot/skynet-studio/skynet-dotnet-stack
-
 compatibility:
   - webpack 5
   - react 17
