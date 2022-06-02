@@ -10,3 +10,6 @@
 [submodule "web-react-deploy"]
 	path = web-react-deploy
 	url = https://github.com/stack-spot/web-react-deploy
+[submodule "web-react-citric-plugin"]
+	path = web-react-citric-plugin
+	url = https://github.com/stack-spot/web-react-citric-plugin.git
