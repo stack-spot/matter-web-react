@@ -1,18 +1,21 @@
-A stack **matter-web-react** provê templates e plugins para a inicialização e desenvolvimento de projetos React web. A mesma vem preparada para desenvolvimento de aplicações microfrontend utilizando module federation do Webpack. Para atingir o objetivo de provê inicialização rápida de projetos microfrontend a stack **matter-web-react** possui 2 templates principais: o **web-react-app** que cria uma aplicação React que pode ser utilizada sozinha ou acoplada a um ambiente microfrontend e o template **web-react-appshell** que cria uma aplicação React shell que pode renderizar outras aplicações geradas pelo pelo template **matter-web-react**.
+A Stack **matter-web-react** provê Templates e Plugins para a inicialização e desenvolvimento de projetos React web. A mesma vem preparada para desenvolvimento de aplicações microfrontend utilizando module federation do Webpack. Para atingir o objetivo de prover a inicialização rápida de projetos microfrontend, a Stack **matter-web-react** oferece dois Templates principais: 
+
+- O **web-react-app** cria uma aplicação React que pode ser utilizada sozinha ou acoplada a um ambiente microfrontend.
+- O **web-react-appshell** cria uma aplicação React shell que pode renderizar outras aplicações geradas pelo Template **matter-web-react**.
 
 ### Visão Geral
 
-O template **web-react-app** cria um projeto React 17 pronto para desenvolvimento de aplicações web. O template é instalado com a biblioteca de estilização **styled-components** e é preparado para ser conectado a um shell microfrontend que utiliza module federation. Este projeto e pronto para escrita e execução de testes unitários por meio das bibliotecas Jest e Testing Library. Por fim o projeto possui configurado o eslint e o prettier para garantir a padronização de escrita de código entre os desenvolvedores.
+O Template **web-react-app** cria um projeto React 17 pronto para desenvolvimento de aplicações web. O Template é instalado com a biblioteca de estilização **styled-components** e é preparado para ser conectado a um shell microfrontend que utiliza module federation. Este projeto é pronto para escrita e execução de testes unitários por meio das bibliotecas **Jest** e **Testing Library**. Por fim o projeto possui o **eslint** e o **prettier** configurados para garantir a padronização de escrita de código entre os desenvolvedores.
 
 ### Pré-requisitos
 
-Para utilizar esse template você precisa utilizar o `CLI` do `StackSpot` que você pode baixar [**aqui**](https://stackspot.com.br/).
+Para utilizar esse Template você precisa utilizar o `STK CLI` do `StackSpot` que você pode baixar [**aqui**](https://stackspot.com.br/).
 
 - Yarn ou NPM
 
 ### Inputs
 
-Os inputs necessários para utilizar o template são:
+Os inputs necessários para utilizar o Template são:
 
 | **Campo**    | **Valor**     | **Descrição**              |
 | :----------- | :------------ | :------------------------- |
