@@ -4,13 +4,15 @@ name: matter-web-react
 
 displayName: Stack Web React
 
-picture: "react.png"
+picture: 'react.png'
 
 category: Frontend
 
 compatibility:
   - webpack 5
   - react 17
+
+technologies: ['React', 'Typescript', 'Web', 'Citric']
 
 about: about.md
 
