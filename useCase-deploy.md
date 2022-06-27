@@ -1,8 +1,8 @@
-Caso seja desejado criar uma aplicação React juntamente da infra necessária para se fazer o deploy da mesma, a stack **matter-web-react** fornece o plugin **deploy-aws**. Este plugin cria uma pasta infra no projeto com uma aplicação CDK que, ao ser executada, cria os recursos necessários na AWS para fazer o deploy de uma aplicação React. O plugin também cria uma pasta .github com arquivos github actions para fazer o build e o deploy da aplicação na AWS.
+Caso deseje criar uma aplicação React juntamente da infra necessária para se fazer o deploy da mesma, use o Plugin **deploy-aws** fornecido na Stack **matter-web-react**. Esse Plugin cria uma pasta infra no projeto com uma Aplicação CDK que, ao ser executada, cria os recursos necessários na AWS para fazer o deploy de uma aplicação React. O Plugin também cria uma pasta .github com arquivos github actions para fazer o build e o deploy da Aplicação na AWS.
 
 ### Pré-requisitos
 
-Para utilizar esse template você precisa utilizar o `CLI` do `StackSpot` que você pode baixar [**aqui**](https://stackspot.com.br/).
+Para utilizar esse Template você precisa utilizar o `CLI` do `StackSpot` que você pode baixar [**aqui**](https://stackspot.com.br/).
 
 - [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) ou [npm](https://nodejs.org/en/)
 - Uma conta AWS
@@ -12,7 +12,7 @@ Para utilizar esse template você precisa utilizar o `CLI` do `StackSpot` que vo
 
 ## Execução do projeto criado
 
-Após criar o projeto com o stackfile, acesse o diretório **app** e execute um dos seguintes comandos:
+Após criar o projeto com o Stackfile, acesse o diretório **app** e execute um dos seguintes comandos:
 
 ```bash
     yarn
@@ -46,7 +46,7 @@ npm run test
 
 ## Criação da infra na AWS
 
-Após criar o projeto, crie um diretório chamado **stages** no mesmo nível dos diretórios **app** e **infra**, neste diretório crie um arquivo com o nome no padrão `<stage_name>.json`(recomendado com o nome do ambiente e conta aws que será feita a criação do recurso e o deploy da aplicação. Exemplos: qa, staging, production, etc).
+Após criar o projeto, crie um diretório chamado **stages** no mesmo nível dos diretórios **app** e **infra**, neste diretório crie um arquivo com o nome no padrão `<stage_name>.json`(recomendado com o nome do ambiente e conta aws que será feita a criação do recurso e o deploy da Aplicação. Exemplos: qa, staging, production, etc).
 Neste arquivo preencha com as seguintes informações:
 
 ```bash
@@ -60,7 +60,7 @@ Neste arquivo preencha com as seguintes informações:
   }
 ```
 
-Ps: Você pode criar vários arquivos para criar a infra em diferentes ambientes.
+**NOTA:** Você pode criar vários arquivos para criar a infra em diferentes ambientes.
 
 Com o arquivo de stages criado, no diretório do projeto, crie os recursos na sua conta AWS com o seguinte comando:
 
