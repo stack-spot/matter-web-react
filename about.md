@@ -1,5 +1,19 @@
-A stack **matter-web-react** provê templates e plugins para a inicialização e desenvolvimento de projetos React web. A mesma vem preparada para desenvolvimento de aplicações microfrontend utilizando module federation do Webpack. Para atingir o objetivo de provê inicialização rápida de projetos microfrontend a stack **matter-web-react** possui 2 templates principais: o **web-react-app** que cria uma aplicação React para ser utilizada sozinha ou conectada a um ambiente microfrontend e o template **web-react-appshell** que cria uma aplicação React shell que pode renderizar outras aplicações geradas pelo template **matter-web-react**.
+A Stack **matter-web-react** provê Templates e Plugins para a inicialização e o desenvolvimento de projetos **React Web**. 
 
-Os templates **web-react-app** e **web-react-appshell** são aplicações React com a biblioteca de componentes **styled-components** e com o sistema de routing react-router-dom. Ambas já vem preparadas para execução de testes unitários utilizando a biblioteca de testes **testing-library**. Ambas possuem configurado o eslint e o prettier para garantir o padrão de escrita de código entre os desenvolvedores.
+A Stack vem preparada para o desenvolvimento de aplicações **`microfrontend`**, utilizando o **`module federation`** do **Webpack**. 
 
-A stack possui 2 plugins que podem ser aplicados a ambos os templates citados anteriormente. O plugin **beagle** adiciona ao projeto a dependência e o boilerplate necessário da biblioteca para server driven UI [Beagle](https://usebeagle.io). Já o plugin **deploy-aws** adiciona ao projeto a capacidade de criação de recursos AWS e Github actions para implatanção nesses recursos.
+Para atingir o objetivo de prover a inicialização rápida de projetos microfrontend, a Stack **matter-web-react** disponibiliza dois Templates principais:
+
+1. O **web-react-app**, que cria uma aplicação **React** para ser utilizada sozinha ou conectada a um ambiente microfrontend;
+
+2. O template **web-react-appshell**, que cria uma aplicação **React shell** que pode renderizar outras aplicações geradas pelo template **matter-web-react**.  
+
+Ambos Templates **web-react-app** e **web-react-appshell** são aplicações React com a biblioteca de componentes **styled-components** e com o sistema de **`routing react-router-dom`**. 
+
+Os dois Templates já vêm preparados para executar testes unitários utilizando a biblioteca de testes **testing-library**. Além disso, eles possuem o **`eslint`** e o **`prettier`** já configurados para garantir o padrão de escrita de código entre os desenvolvedores.
+
+A Stack **matter-web-react** possui dois Plugins que podem ser aplicados a ambos os Templates citados anteriormente:
+
+1. O Plugin **`beagle`** adiciona ao projeto a dependência e o `boilerplate` necessário da biblioteca para **Server Driven UI** [Beagle](https://usebeagle.io);  
+
+2. Já o Plugin **`deploy-aws`** adiciona ao projeto a capacidade de criar recursos **AWS** e **Github Actions** para implatanção nestes recursos.

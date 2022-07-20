@@ -1,18 +1,22 @@
-Caso seja desejado criar uma aplicação React juntamente da infra necessária para se fazer o deploy da mesma, a stack **matter-web-react** fornece o plugin **deploy-aws**. Este plugin cria uma pasta infra no projeto com uma aplicação CDK que, ao ser executada, cria os recursos necessários na AWS para fazer o deploy de uma aplicação React. O plugin também cria uma pasta .github com arquivos github actions para fazer o build e o deploy da aplicação na AWS.
+Para criar uma aplicação React, junto com a infraestrutura necessária para se fazer o deploy dela, a Stack **`matter-web-react`** disponibilzia o Plugin **`deploy-aws`**. 
 
-### Pré-requisitos
+Este Plugin cria uma pasta infra no projeto com uma aplicação **CDK** que, ao ser executada, cria os recursos necessários na **AWS** para fazer o deploy de uma aplicação React. 
 
-Para utilizar esse template você precisa utilizar o `CLI` do `StackSpot` que você pode baixar [**aqui**](https://stackspot.com.br/).
+O Plugin **`deploy-aws`** também cria uma pasta **`.github`**, com arquivos **GitHub Actions** para fazer o `build` e o `deploy` da aplicação na AWS.
 
+### **Pré-requisitos**  
+Para utilizar este Template, é preciso ter instalado na sua máquina os itens abaixo:  
+
+- Ter o [**STK CLI**](https://stackspot.com.br/) baixado;  
 - [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) ou [npm](https://nodejs.org/en/)
-- Uma conta AWS
-- Secrets da AWS nas [variáveis de ambiente](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html#envvars-set)
-- Um github Identity Provider na sua conta AWS e uma role IAM com acesso ao S3 e uma trust relationship com o Identity provider.([Exemplo](https://github.com/aws-actions/configure-aws-credentials#sample-iam-role-cloudformation-template))
-- arn da role IAM configurada como secret no github to projeto com o noome `PIPELINE_RELEASE_ROLE`
+- Uma conta **AWS**;
+- O **Secrets** da AWS nas [variáveis de ambiente](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html#envvars-set);  
+- Um **GitHub Identity Provider** na sua conta AWS; **role IAM** com acesso ao S3 e uma **`trust relationship`** com o **Identity Provider**. [Confira um exemplo aqui](https://github.com/aws-actions/configure-aws-credentials#sample-iam-role-cloudformation-template)
+- **`arn`** da role IAM configurada como **`secret`* no GitHub do projeto com o nome **`PIPELINE_RELEASE_ROLE`**. 
 
-## Execução do projeto criado
+### **Execução do projeto criado**  
 
-Após criar o projeto com o stackfile, acesse o diretório **app** e execute um dos seguintes comandos:
+1. Depois de criar o projeto com o **`stackfile`**, acesse o diretório **app** e execute um dos comandos abaixo:  
 
 ```bash
     yarn
@@ -22,7 +26,7 @@ Após criar o projeto com o stackfile, acesse o diretório **app** e execute um 
     npm install
 ```
 
-Após instalar as dependências do projeto, execute um dos seguintes comandos para executar o projeto:
+2. Após instalar as dependências do projeto, execute um dos comandos abaixo para executar o projeto:  
 
 ```bash
     yarn start
@@ -32,9 +36,9 @@ Após instalar as dependências do projeto, execute um dos seguintes comandos pa
     npm start
 ```
 
-Após executar o projeto, abra o browser em `http://localhost:8005`
+3. Depois de executar o projeto, abra o browser em `http://localhost:8005`
 
-Para realizar a execução dos testes unitários. Execute um dos seguintes comandos:
+Para executar os testes unitários, execute um dos comandos abaixo:  
 
 ```bash
 yarn test
@@ -44,10 +48,10 @@ yarn test
 npm run test
 ```
 
-## Criação da infra na AWS
+### **Criação da infraestrutura na AWS**  
 
-Após criar o projeto, crie um diretório chamado **stages** no mesmo nível dos diretórios **app** e **infra**, neste diretório crie um arquivo com o nome no padrão `<stage_name>.json`(recomendado com o nome do ambiente e conta aws que será feita a criação do recurso e o deploy da aplicação. Exemplos: qa, staging, production, etc).
-Neste arquivo preencha com as seguintes informações:
+1. Após criar o projeto, crie um diretório chamado **stages** no mesmo nível dos diretórios **app** e **infra**.
+2. Ainda neste diretório, crie um arquivo com o nome no padrão **`<stage_name>.json`**. É recomendado criar com o mesmo nome do ambiente e conta AWS em que o recurso e o deploy da aplicação serão criados. Exemplos: `qa`, `staging`, `production`, etc. Neste mesmo arquivo preencha com as seguintes informações:  
 
 ```bash
   {
@@ -60,13 +64,16 @@ Neste arquivo preencha com as seguintes informações:
   }
 ```
 
-Ps: Você pode criar vários arquivos para criar a infra em diferentes ambientes.
+> Você pode criar vários arquivos para criar a infra em diferentes ambientes.
 
-Com o arquivo de stages criado, no diretório do projeto, crie os recursos na sua conta AWS com o seguinte comando:
+3. Com o arquivo de `stages` criado, dentro do diretório do projeto crie os recursos na sua conta AWS com o seguinte comando:
 
 ```bash
 stk deploy <stage_name>
 ```
 
-Faça o commit e dê o push do seu código para o github. Após fazer o merge de suas alterações, gere uma release no github com o formato `<stage_name>-v0.0.0`.
-A action de release será executada no github e se não houver erros com testes, build ou de qualidade no código o deploy será feito no ambiente criado.
+4. Faça o `commit` e dê o `push` do seu código para o GitHub. 
+
+5. Depois de fazer o `merge` de suas alterações, gere uma release no GitHub com o formato **`<stage_name>-v0.0.0`**.
+
+A Action de release será executada no GitHub e se não houver erros com testes, build ou de qualidade no código, o deploy será feito no ambiente criado.

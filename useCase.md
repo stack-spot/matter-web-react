@@ -1,13 +1,23 @@
-A stack **matter-web-react** provê templates e plugins para a inicialização e desenvolvimento de projetos React web. A mesma vem preparada para desenvolvimento de aplicações microfrontend utilizando module federation do Webpack. Para atingir o objetivo de provê inicialização rápida de projetos microfrontend a stack **matter-web-react** possui 2 templates principais: o **web-react-app** que cria uma aplicação React que pode ser utilizada sozinha ou acoplada a um ambiente microfrontend e o template **web-react-appshell** que cria uma aplicação React shell que pode renderizar outras aplicações geradas pelo pelo template **matter-web-react**.
+A Stack **matter-web-react** provê Templates e Plugins para a inicialização e o desenvolvimento de projetos **React Web**. 
 
-### Visão Geral
+A Stack vem preparada para o desenvolvimento de aplicações **`microfrontend`**, utilizando o **`module federation`** do **Webpack**. 
 
-O template **web-react-app** cria um projeto React 17 pronto para desenvolvimento de aplicações web. O template é instalado com a biblioteca de estilização **styled-components** e é preparado para ser conectado a um shell microfrontend que utiliza module federation. Este projeto e pronto para escrita e execução de testes unitários por meio das bibliotecas Jest e Testing Library. Por fim o projeto possui configurado o eslint e o prettier para garantir a padronização de escrita de código entre os desenvolvedores.
+Para atingir o objetivo de prover a inicialização rápida de projetos microfrontend, a Stack **matter-web-react** disponibiliza dois Templates principais:
+
+1. O **web-react-app**, que cria uma aplicação **React** para ser utilizada sozinha ou conectada a um ambiente microfrontend;
+
+2. O template **web-react-appshell**, que cria uma aplicação **React shell** que pode renderizar outras aplicações geradas pelo template **matter-web-react**.  
+
+### **Visão Geral**
+
+O template **web-react-app** cria um projeto **React 17** pronto para o desenvolvimento de aplicações web. O template é instalado com a biblioteca de estilização **styled-components** e é preparado para ser conectado a um **`shell microfrontend`** que utiliza **`module federation`**. 
+
+Este projeto é preparado para a escrita e execução de testes unitários por meio das bibliotecas **Jest** e **Testing Library**. O projeto também tem o **`eslint`** e o **`prettier`** já configurados para garantir a padronização de escrita de código entre os desenvolvedores.
 
 ### Pré-requisitos
+Para utilizar este Template, é preciso ter instalado na sua máquina os itens abaixo:  
 
-Para utilizar esse template você precisa utilizar o `CLI` do `StackSpot` que você pode baixar [**aqui**](https://stackspot.com.br/).
-
+- Ter o [**STK CLI**](https://stackspot.com.br/) baixado;  
 - Yarn ou NPM
 
 ### Inputs
@@ -21,7 +31,7 @@ Os inputs necessários para utilizar o template são:
 
 ## Execução do projeto criado
 
-Após criar o projeto, acesse o diretório **app** e execute um dos seguintes comandos:
+1. Depois de criar o projeto, acesse o diretório **app** e execute um dos comandos abaixo:  
 
 ```bash
     yarn
@@ -31,7 +41,7 @@ Após criar o projeto, acesse o diretório **app** e execute um dos seguintes co
     npm install
 ```
 
-Após instalar as dependências do projeto, execute um dos seguintes comandos para executar o projeto:
+2. Após instalar as dependências do projeto, execute um dos comandos para executar o projeto:  
 
 ```bash
     yarn start
@@ -41,9 +51,9 @@ Após instalar as dependências do projeto, execute um dos seguintes comandos pa
     npm start
 ```
 
-Após executar o projeto, abra o browser em `http://localhost:8005`
+3. Depois de executar o projeto, abra o browser em `http://localhost:8005`
 
-Para realizar a execução dos testes unitários. Execute um dos seguintes comandos:
+4. Para realizar a execução dos testes unitários, execute um dos comandos abaixo:  
 
 ```bash
 yarn test
